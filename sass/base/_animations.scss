@@ -30,6 +30,38 @@
   }
 }
 
+@keyframes moveInLeftMobile {
+  0% {
+    opacity: 0;
+    transform: translateX(-3rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRightMobile {
+  0% {
+    opacity: 0;
+    transform: translateX(3rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 @keyframes moveInBottom {
   0% {
     opacity: 0;

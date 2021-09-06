@@ -1,3 +1,15 @@
+.preload * {
+  transition: none !important;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
 .u-center-text {
   text-align: center !important;
 }

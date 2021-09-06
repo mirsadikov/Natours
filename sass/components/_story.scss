@@ -17,6 +17,7 @@
 
   @include respond(phone) {
     transform: skewX(0);
+    padding-left: 4rem;
   }
 
   &__shape {
@@ -31,7 +32,10 @@
     position: relative;
 
     @include respond(phone) {
-      transform: translateX(-3rem) skewX(0);
+      transform: translateX(0) skewX(0);
+      width: 10rem;
+      height: 10rem;
+      margin-right: 3rem;
     }
   }
 

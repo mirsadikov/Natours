@@ -27,6 +27,7 @@ body {
     animation-timing-function: ease-out;
 
     @include respond(phone) {
+      animation-name: moveInLeftMobile;
       letter-spacing: 1rem;
       font-size: 5rem;
     }
@@ -42,6 +43,7 @@ body {
 
     @include respond(phone) {
       letter-spacing: 0.5rem;
+      animation: moveInRightMobile 1s ease-out;
     }
   }
 }

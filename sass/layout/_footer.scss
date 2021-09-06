@@ -43,6 +43,13 @@
     &:not(:last-child) {
       margin-right: 1.5rem;
     }
+
+    @include respond(tab-land) {
+      padding: 0.5rem;
+    }
+    @include respond(phone) {
+      padding: 1rem;
+    }
   }
 
   &__link {
