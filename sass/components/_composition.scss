@@ -15,6 +15,7 @@
       position: relative;
       width: 33.333333%;
       box-shadow: 0 1.5rem 3rem rgba($color-black, 0.2);
+      outline-offset: 1rem;
     }
 
     &--p1 {
@@ -53,11 +54,20 @@
       outline: 1.5rem solid $color-primary;
       transform: scale(1.05) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
-      z-index: 20;
+      z-index: 200;
+
+      @include respond(tab-port) {
+        outline: 1rem solid $color-primary;
+        transform: scale(1.2) translateY(-0.5rem);
+      }
     }
   }
 
   &:hover &__photo:not(:hover) {
     transform: scale(0.95);
+
+    @include respond(tab-port) {
+      transform: scale(1.05);
+    }
   }
 }
